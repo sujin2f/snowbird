@@ -1,0 +1,54 @@
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: var(--transition);
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--color-ocean);
+    color: var(--color-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-sky);
+    box-shadow: 0 4px 12px rgba(0, 131, 143, 0.3);
+}
+
+.btn-dark {
+    background-color: var(--color-gray-800);
+    color: var(--color-white);
+}
+
+.btn-dark:hover {
+    background-color: #000000;
+}
+
+.btn-disabled {
+    background-color: var(--color-gray-200);
+    color: var(--color-gray-400);
+    cursor: not-allowed;
+}
+
+.btn-sm {
+    padding: 10px 20px;
+    font-size: 0.875rem;
+}
+
+.btn-lg {
+    padding: 16px 32px;
+    font-size: 1.125rem;
+    border-radius: var(--border-radius);
+    gap: 8px;
+}
+
+.btn-block {
+    width: 100%;
+    padding: 12px;
+    font-size: 0.875rem;
+}

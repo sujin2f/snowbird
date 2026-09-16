@@ -1,0 +1,246 @@
+
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+.hero-section {
+    position: relative;
+    background-color: var(--color-navy);
+    color: var(--color-white);
+    padding: 96px 0;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.35;
+}
+
+.hero-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-container {
+    position: relative;
+    z-index: 10;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 6px 14px;
+    background-color: rgba(0, 131, 143, 0.8);
+    color: var(--color-white);
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 24px;
+}
+
+.hero-desc {
+    font-size: 1.25rem;
+    color: var(--color-gray-200);
+    margin-bottom: 32px;
+}
+
+/* ==========================================================================
+   Trust & Profile Section
+   ========================================================================== */
+.about-section {
+    padding: 80px 0;
+    background-color: var(--color-white);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 32px;
+}
+
+.profile-card {
+    background-color: var(--color-sand);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-gray-200);
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.profile-img-wrapper {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid var(--color-white);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+}
+
+.profile-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info h2 {
+    font-size: 1.75rem;
+    color: var(--color-navy);
+}
+
+.profile-info .subtitle {
+    display: block;
+    color: var(--color-ocean);
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.profile-info p {
+    color: var(--color-gray-600);
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+}
+
+.profile-info p.sub-text {
+    font-size: 0.875rem;
+    margin-bottom: 0;
+}
+
+.did-you-know-card {
+    background-color: var(--color-navy);
+    color: var(--color-white);
+    padding: 32px;
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-top .tag {
+    font-size: 0.75rem;
+    color: var(--color-sky);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.flag-icon {
+    font-size: 1.5rem;
+}
+
+.card-body h3 {
+    font-size: 1.5rem;
+    margin: 16px 0 12px;
+}
+
+.card-body p {
+    color: var(--color-gray-200);
+    font-size: 1.1rem;
+}
+
+.card-footer {
+    padding-top: 24px;
+    border-top: 1px solid var(--color-gray-700);
+    margin-top: 24px;
+}
+
+.card-footer p {
+    color: var(--color-sky);
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+/* ==========================================================================
+   Links & Opportunities Section
+   ========================================================================== */
+.links-section {
+    padding: 80px 0;
+    background-color: var(--color-gray-50);
+    border-top: 1px solid var(--color-gray-200);
+}
+
+.section-header {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 48px;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    color: var(--color-navy);
+    margin-bottom: 8px;
+}
+
+.section-header p {
+    color: var(--color-gray-600);
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.opportunity-card {
+    background-color: var(--color-white);
+    padding: 32px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-gray-200);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: var(--transition);
+}
+
+.opportunity-card:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    margin-bottom: 24px;
+}
+
+.icon-teal { background-color: #e6f7f8; color: var(--color-ocean); }
+.icon-amber { background-color: #fff7ed; color: #d97706; }
+.icon-blue { background-color: #eff6ff; color: #2563eb; }
+
+.opportunity-card h3 {
+    font-size: 1.25rem;
+    color: var(--color-navy);
+    margin-bottom: 12px;
+}
+
+.opportunity-card p {
+    color: var(--color-gray-600);
+    font-size: 0.875rem;
+    margin-bottom: 24px;
+}
