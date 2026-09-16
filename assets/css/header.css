@@ -17,13 +17,6 @@
     justify-content: space-between;
 }
 
-.logo-group {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    flex-direction: column;
-}
-
 .logo-title a {
     font-size: 1.5rem;
     font-weight: 800;
@@ -49,8 +42,8 @@
     color: var(--color-gray-700);
 }
 
-.nav-links a:hover,
-.nav-links a.active {
+.nav-links .wp-block-navigation-item__content:hover,
+.nav-links .wp-block-navigation-item__content.active {
     color: var(--color-ocean);
     font-weight: 600;
 }

@@ -2,6 +2,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "@wordpress/blocks"
+/*!********************************!*\
+  !*** external ["wp","blocks"] ***!
+  \********************************/
+(module) {
+
+module.exports = window["wp"]["blocks"];
+
+/***/ },
+
 /***/ "@wordpress/dom-ready"
 /*!**********************************!*\
   !*** external ["wp","domReady"] ***!
@@ -85,14 +95,18 @@ let __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_dom_ready__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/dom-ready */ "@wordpress/dom-ready");
 /* harmony import */ var _wordpress_dom_ready__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_dom_ready__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
+/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__);
+
 
 _wordpress_dom_ready__WEBPACK_IMPORTED_MODULE_0___default()(() => {
-  // registerBlockVariation("core/button", {
-  //   title: "Custom Embed",
-  //   name: "custom-embed",
-  //   attributes: { providerNameSlug: "custom" },
-  // });
-
+  (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__.registerBlockVariation)("core/button", {
+    title: "Custom Embed",
+    name: "custom-embed",
+    attributes: {
+      providerNameSlug: "custom"
+    }
+  });
   console.log(1);
 });
 const a = b => {

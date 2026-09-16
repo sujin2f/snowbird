@@ -15,8 +15,8 @@ add_action('wp_enqueue_scripts', function() {
     wp_enqueue_script(
         'index-js', // Unique handle
         get_stylesheet_directory_uri() . '/build/index.js', 
-        array(), // Dependencies (if any)
-        '4.4.2', // Version number
+        array('wp-blocks', 'wp-dom-ready'), // Dependencies (if any)
+        '4.4.3', // Version number
         true // Load in footer
     );
 
@@ -24,7 +24,7 @@ add_action('wp_enqueue_scripts', function() {
         'style', // Unique handle for your stylesheet
         get_stylesheet_uri(), 
         array(), // Dependencies (leave empty array if none)
-        '0.0.5', // Version number (helps with cache busting)
+        '0.0.8', // Version number (helps with cache busting)
         'all' // Media type (e.g., 'all', 'print', 'screen')
     );
 
@@ -68,6 +68,7 @@ add_action('after_setup_theme', function() {
     if ( ! is_admin() ) {
         return;
     }
+
     $styles = array(
         'assets/css/button.css',
         'assets/css/header.css',
@@ -76,3 +77,12 @@ add_action('after_setup_theme', function() {
     // Enqueues a specific stylesheet into the block editor canvas
     add_editor_style( $styles );
 });
+
+function my_theme_remove_layout_styles() {
+    // Remove default block editor layout styles
+    add_theme_support( 'disable-layout-styles' );
+}
+add_action( 'after_setup_theme', 'my_theme_remove_layout_styles' );
+
+remove_action('wp_enqueue_scripts', 'wp_enqueue_global_styles');
+remove_action('wp_footer', 'wp_enqueue_global_styles', 1);

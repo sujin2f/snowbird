@@ -1,5 +1,4 @@
-/* Buttons */
-.btn {
+.wp-block-button__link {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -10,15 +9,21 @@
     border: none;
 }
 
-.btn-primary {
+.wp-block-button--primary .wp-block-button__link {
     background-color: var(--color-ocean);
     color: var(--color-white);
 }
 
-.btn-primary:hover {
+.wp-block-button--primary .wp-block-button__link:hover {
     background-color: var(--color-sky);
     box-shadow: 0 4px 12px rgba(0, 131, 143, 0.3);
 }
+
+.wp-block-button--sm .wp-block-button__link {
+    padding: 10px 20px;
+    font-size: 0.875rem;
+}
+/* 
 
 .btn-dark {
     background-color: var(--color-gray-800);
@@ -35,11 +40,6 @@
     cursor: not-allowed;
 }
 
-.btn-sm {
-    padding: 10px 20px;
-    font-size: 0.875rem;
-}
-
 .btn-lg {
     padding: 16px 32px;
     font-size: 1.125rem;
@@ -51,4 +51,4 @@
     width: 100%;
     padding: 12px;
     font-size: 0.875rem;
-}
+} */
