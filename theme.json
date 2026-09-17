@@ -1,4 +1,60 @@
 {
-    "$schema": "https://schemas.wp.org/trunk/theme.json",
-    "version": 3
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "name": "Primary",
+          "slug": "primary",
+          "color": "#00838F"
+        },
+        {
+          "name": "Primary Light",
+          "slug": "primary-light",
+          "color": "#00ACC1"
+        },
+        {
+          "name": "Navy",
+          "slug": "navy",
+          "color": "#0A2540"
+        },
+        {
+          "name": "Gray 50",
+          "slug": "gray-50",
+          "color": "#f9fafb"
+        },
+        {
+          "name": "Gray 200",
+          "slug": "gray-200",
+          "color": "#e5e7eb"
+        },
+        {
+          "name": "Gray 400",
+          "slug": "gray-400",
+          "color": "#9ca3af"
+        },
+        {
+          "name": "Gray 500",
+          "slug": "gray-500",
+          "color": "#6b7280"
+        },
+        {
+          "name": "Gray 800",
+          "slug": "gray-800",
+          "color": "#1f2937"
+        },
+        {
+          "name": "Secondary Dark",
+          "slug": "secondary-dark",
+          "color": "#FF8F00"
+        }
+      ]
+    },
+    "custom": {
+      "transition": "all 0.3s ease",
+      "font-family": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+      "line-height": "1.6"
+    }
+  }
 }

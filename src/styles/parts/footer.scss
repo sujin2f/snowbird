@@ -1,0 +1,29 @@
+@use "../mixins";
+
+// TODO variables
+
+.layout__footer {
+  background-color: var(--wp--preset--color--navy);
+  color: var(--wp--preset--color--gray-400);
+  padding: 48px 0;
+  border-top: 1px solid #1e293b;
+}
+
+.footer__container {
+  @include mixins.container;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__subtext {
+  font-size: 0.75rem;
+  color: var(--wp--preset--color--gray-500);
+  margin-top: 4px;
+}
+
+.footer__copyright {
+  font-size: 0.75rem;
+  color: var(--wp--preset--color--gray-500);
+  text-align: right;
+}

@@ -1,49 +1,33 @@
 /* ==========================================================================
    Header Section
    ========================================================================== */
-.site-header {
-    background-color: var(--color-white);
-    border-bottom: 1px solid var(--color-gray-200);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-}
-
-.header-container {
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .logo-title a {
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: var(--color-navy);
-    letter-spacing: -0.5px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-navy);
+  letter-spacing: -0.5px;
 }
 
 .logo-subtitle {
-    display: block;
-    font-size: 0.625rem;
-    color: var(--color-gray-500);
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin-top: -4px;
+  display: block;
+  font-size: 0.625rem;
+  color: var(--color-gray-500);
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: -4px;
 }
 
 .nav-links {
-    display: flex;
-    gap: 32px;
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: var(--color-gray-700);
+  display: flex;
+  gap: 32px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-gray-700);
 }
 
 .nav-links .wp-block-navigation-item__content:hover,
 .nav-links .wp-block-navigation-item__content.active {
-    color: var(--color-ocean);
-    font-weight: 600;
+  color: var(--color-ocean);
+  font-weight: 600;
 }

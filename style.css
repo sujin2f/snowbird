@@ -11,8 +11,8 @@ License: GPL-2.0-or-later
 Text Domain: my-block-theme
 */
 
-@import "./assets/css/global.css";
-@import "./assets/css/button.css";
-@import "./assets/css/header.css";
-@import "./assets/css/footer.css";
-@import "./assets/css/temp.css";
+body {
+  font-family: var(--wp--custom--font-family);
+  background-color: var(--wp--preset--color--gray-50);
+  color: var(--wp--preset--color--gray-800);
+}
