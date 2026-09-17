@@ -1,5 +1,30 @@
-.hero__container {
-  .wp-block-cover__background {
-    background-color: black;
+@use "../mixins";
+
+.hero__wrapper {
+  min-height: 0;
+  padding: 96px 0;
+
+  .wp-block-cover__inner-container {
+    @include mixins.container;
+  }
+
+  .badge {
+    margin-bottom: 20px;
+  }
+
+  .wp-block-heading {
+    color: var(--wp--preset--color--white);
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.15;
+    margin: 0 0 24px;
+    max-width: 750px;
+  }
+
+  .hero__description {
+    font-size: 1.25rem;
+    color: var(--wp--preset--color--gray-200);
+    margin: 0 0 32px;
+    max-width: 750px;
   }
 }

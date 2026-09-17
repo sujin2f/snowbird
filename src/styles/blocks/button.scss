@@ -20,6 +20,13 @@
     }
   }
 
+  &.button--lg {
+    .wp-block-button__link {
+      padding: 16px 32px;
+      font-size: 1.125rem;
+    }
+  }
+
   &.button--primary {
     .wp-block-button__link {
       background-color: var(--wp--preset--color--primary);

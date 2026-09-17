@@ -16,6 +16,10 @@
   padding: 10px 20px;
   font-size: 0.875rem;
 }
+.wp-block-button.button--lg .wp-block-button__link {
+  padding: 16px 32px;
+  font-size: 1.125rem;
+}
 .wp-block-button.button--primary .wp-block-button__link {
   background-color: var(--wp--preset--color--primary);
   color: var(--wp--preset--color--white);
@@ -54,8 +58,44 @@
     padding: 12px;
     font-size: 0.875rem;
 } */
-.hero__container .wp-block-cover__background {
-  background-color: black;
+.badge {
+  display: inline-block;
+  padding: 6px 14px;
+  background-color: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--white);
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.hero__wrapper {
+  min-height: 0;
+  padding: 96px 0;
+}
+.hero__wrapper .wp-block-cover__inner-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--wp--preset--font-size--medium);
+}
+.hero__wrapper .badge {
+  margin-bottom: 20px;
+}
+.hero__wrapper .wp-block-heading {
+  color: var(--wp--preset--color--white);
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 0 0 24px;
+  max-width: 750px;
+}
+.hero__wrapper .hero__description {
+  font-size: 1.25rem;
+  color: var(--wp--preset--color--gray-200);
+  margin: 0 0 32px;
+  max-width: 750px;
 }
 
 .layout__header {
