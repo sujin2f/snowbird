@@ -54,6 +54,10 @@
     padding: 12px;
     font-size: 0.875rem;
 } */
+.hero__container .wp-block-cover__background {
+  background-color: black;
+}
+
 .layout__header {
   background-color: var(--wp--preset--color--white);
   border-bottom: 1px solid var(--wp--preset--color--gray-200);
