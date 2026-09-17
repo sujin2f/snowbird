@@ -6,6 +6,7 @@
 
   .wp-block-cover__inner-container {
     @include mixins.container;
+    box-sizing: border-box;
   }
 
   .badge {

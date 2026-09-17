@@ -1,0 +1,11 @@
+@use "../mixins";
+
+.about__wrapper {
+  padding: 80px 0;
+  background-color: var(--color-white);
+}
+
+.about__container {
+  @include mixins.container;
+  gap: 32px;
+}
