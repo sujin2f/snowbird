@@ -81,6 +81,13 @@
 .card.card--sand {
   background-color: var(--wp--preset--color--sand);
 }
+.card.card--navy {
+  background-color: var(--wp--preset--color--navy);
+  color: var(--wp--preset--color--white);
+}
+.card p {
+  margin: 0;
+}
 
 .card--profile {
   grid-template-areas: "image header" "image subtitle" "image paragraph" "image paragraph";
@@ -118,7 +125,7 @@
   display: block;
   color: var(--wp--preset--color--ocean);
   font-weight: 600;
-  margin: 0 0 16px;
+  margin-bottom: 16px;
   grid-area: subtitle;
 }
 .card--profile__paragraph {
@@ -130,10 +137,40 @@
 .card--profile__paragraph p {
   color: var(--wp--preset--color--gray-600);
   font-size: 0.95rem;
-  margin: 0 0 12px;
+  margin-bottom: 12px;
 }
 .card--profile:last-child {
   margin-bottom: 0;
+}
+
+.card--market-insight {
+  color: var(--wp--preset--color--gray-200);
+  font-size: 1.1rem;
+}
+.card--market-insight__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card--market-insight h2 {
+  font-size: 0.75rem;
+  color: var(--wp--preset--color--sky);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+.card--market-insight__subtitle {
+  font-size: 1.5rem;
+  margin: 16px 0 12px;
+  font-weight: 600;
+}
+.card--market-insight__footer {
+  padding-top: 24px;
+  border-top: 1px solid var(--wp--preset--color--gray-700);
+  margin-top: 24px;
+  color: var(--wp--preset--color--sky);
+  font-weight: 600;
+  font-size: 0.875rem;
 }
 
 .hero__wrapper {

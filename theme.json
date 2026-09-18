@@ -30,6 +30,11 @@
           "color": "#00838F"
         },
         {
+          "name": "Sky",
+          "slug": "sky",
+          "color": "#00ACC1"
+        },
+        {
           "name": "Gray 50",
           "slug": "gray-50",
           "color": "#f9fafb"
@@ -53,6 +58,11 @@
           "name": "Gray 600",
           "slug": "gray-600",
           "color": "#4b5563"
+        },
+        {
+          "name": "Gray 700",
+          "slug": "gray-700",
+          "color": "#374151"
         },
         {
           "name": "Gray 800",

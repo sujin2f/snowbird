@@ -49,14 +49,30 @@
         </div>
         <!-- /wp:column -->
 
-        <!-- wp:column {"width":"33.33%","className":"card"} -->
-        <div class="wp-block-column card" style="flex-basis:33.33%">
-            <!-- wp:heading -->
-            <h2>Did You Know?</h2>
-            <!-- /wp:heading -->
+        <!-- wp:column {"width":"33.33%","className":"card card--navy card--market-insight"} -->
+        <div class="wp-block-column card card--navy card--market-insight" style="flex-basis:33.33%">
+            <!-- wp:group {"className":"card--market-insight__header"} -->
+            <div class="wp-block-group card--market-insight__header">
+                <!-- wp:heading -->
+                <h2>Market Insight</h2>
+                <!-- /wp:heading -->
 
+                <!-- wp:paragraph {"className":"card--market-insight__flag"} -->
+                <p class="card--market-insight__flag">🍁</p>
+                <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+
+            <!-- wp:paragraph {"className":"card--market-insight__subtitle"} -->
+            <p class="card--market-insight__subtitle">Did You Know?</p>
+            <!-- /wp:paragraph -->
+            
             <!-- wp:paragraph -->
             <p>Canadians are the largest market of foreigners that buy and sell real estate in Florida!</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph {"className":"card--market-insight__footer"} -->
+            <p class="card--market-insight__footer">Don't get stuck with the wrong agent!</p>
             <!-- /wp:paragraph -->
         </div>
         <!-- /wp:column -->
