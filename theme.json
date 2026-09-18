@@ -20,6 +20,16 @@
           "color": "#0A2540"
         },
         {
+          "name": "Sand",
+          "slug": "sand",
+          "color": "#F4F1EA"
+        },
+        {
+          "name": "Ocean",
+          "slug": "ocean",
+          "color": "#00838F"
+        },
+        {
           "name": "Gray 50",
           "slug": "gray-50",
           "color": "#f9fafb"
@@ -38,6 +48,11 @@
           "name": "Gray 500",
           "slug": "gray-500",
           "color": "#6b7280"
+        },
+        {
+          "name": "Gray 600",
+          "slug": "gray-600",
+          "color": "#4b5563"
         },
         {
           "name": "Gray 800",
