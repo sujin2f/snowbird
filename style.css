@@ -10,10 +10,3 @@ Text Domain: snowbird
 TODO https://wordpress.org/plugins/contact-form-block/
 TODO https://github.com/nikolaystrikhar/gutenberg-forms
 */
-
-body {
-  font-family: var(--wp--custom--font-family);
-  background-color: var(--wp--preset--color--gray-50);
-  color: var(--wp--preset--color--gray-800);
-  line-height: 1.6;
-}

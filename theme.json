@@ -5,6 +5,11 @@
     "color": {
       "palette": [
         {
+          "name": "White",
+          "slug": "white",
+          "color": "#ffffff"
+        },
+        {
           "name": "Primary",
           "slug": "primary",
           "color": "#00838F"
