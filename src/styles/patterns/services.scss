@@ -1,6 +1,6 @@
 @use "../mixins";
 
-.links__wrapper {
+.services__wrapper {
   padding: 80px 0;
   background-color: var(--wp--preset--color--gray-50);
   border-top: 1px solid var(--wp--preset--color--gray-200);
@@ -10,7 +10,7 @@
   }
 }
 
-.links__container {
+.services__container {
   @include mixins.container;
   gap: 32px;
 
@@ -33,7 +33,7 @@
   }
 }
 
-.links__header {
+.services__header {
   @include mixins.container;
   max-width: 600px;
   margin-bottom: 48px;

@@ -1,18 +1,18 @@
 <?php
 /**
- * Title: Links
- * Slug: snowbird/links
+ * Title: Services
+ * Slug: snowbird/services
  * Categories: columns
  */
 ?>
 
-<!-- wp:group {"className":"links__wrapper"} -->
-<div class="wp-block-group links__wrapper">
+<!-- wp:group {"className":"services__wrapper","id":"section__services"} -->
+<div class="wp-block-group services__wrapper" id="section__services">
     <!-- wp:group {
         "tagName":"header",
-        "className":"links__header"
+        "className":"services__header"
     } -->
-    <header class="wp-block-group links__header">
+    <header class="wp-block-group services__header">
         <!-- wp:heading -->
         <h2>Explore Florida Real Estate Opportunities</h2>
         <!-- /wp:heading -->
@@ -25,9 +25,9 @@
 
     <!-- wp:columns {
         "isStackedOnMobile":false,
-        "className":"links__container"
+        "className":"services__container"
     } -->
-    <div class="wp-block-columns links__container">
+    <div class="wp-block-columns services__container">
         <!-- wp:column {"width":"33.33%","className":"card card--white"} -->
         <div class="wp-block-column card card--white" style="flex-basis:33.33%">
             <!-- wp:heading {"level":3} -->
@@ -91,13 +91,12 @@
             <!-- wp:button {
                 "tagName":"button",
                 "type":"button",
-                "className":"button--black button--sm"
+                "className":"button--black button--sm disabled"
             } -->
-            <div class="wp-block-button button--black button--sm">
+            <div class="wp-block-button button--black button--sm disabled">
                 <button
                     type="button"
                     class="wp-block-button__link wp-element-button"
-                    disabled
                 >
                     Coming Soon
                 </button>

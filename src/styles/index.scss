@@ -4,10 +4,15 @@
 
 @use "patterns/hero";
 @use "patterns/about";
-@use "patterns/links";
+@use "patterns/services";
+@use "patterns/contact";
 
 @use "parts/header";
 @use "parts/footer";
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: var(--wp--custom--font-family);

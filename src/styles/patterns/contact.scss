@@ -1,0 +1,11 @@
+@use "../mixins";
+
+.contact__wrapper {
+  padding: 80px 0;
+  background-color: var(--wp--preset--color--white);
+}
+
+.contact__container {
+  @include mixins.container;
+  gap: 32px;
+}

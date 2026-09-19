@@ -46,8 +46,8 @@
     }
   }
 
-  .wp-block-button__link {
-    &:disabled {
+  &.disabled {
+    .wp-block-button__link {
       background-color: var(--wp--preset--color--gray-200);
       color: var(--wp--preset--color--gray-400);
       cursor: not-allowed;

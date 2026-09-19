@@ -6,8 +6,8 @@
  */
 ?>
 
-<!-- wp:group {"className":"about__wrapper"} -->
-<div class="wp-block-group about__wrapper">
+<!-- wp:group {"className":"about__wrapper","id":"section__about"} -->
+<div class="wp-block-group about__wrapper" id="section__about">
     <!-- wp:columns {
         "isStackedOnMobile":false,
         "className":"about__container"

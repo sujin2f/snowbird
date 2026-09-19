@@ -17,4 +17,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  .wp-block-navigation__container {
+    display: flex;
+    gap: 32px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--wp--preset--color--gray-700);
+
+    .wp-block-navigation-item__content:hover {
+      text-decoration: underline;
+      color: var(--wp--preset--color--ocean);
+    }
+  }
 }
