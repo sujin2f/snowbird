@@ -46,7 +46,7 @@
 			>
 				Find Your Local Agent
 				<!-- wp:template-part {
-					"slug":"icons/fa-arrow-right",
+					"slug":"icons-arrow-right",
 					"tagName":"span"
 				} /-->
 			</a>

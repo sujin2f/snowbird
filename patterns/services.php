@@ -35,7 +35,7 @@
         <!-- wp:column {"width":"33.33%","className":"card card--white"} -->
         <div class="wp-block-column card card--white" style="flex-basis:33.33%">
             <!-- wp:template-part {
-                "slug":"icons/fa-user-check",
+                "slug":"icons-user-check",
                 "tagName":"div",
                 "className":"card__icon icon--ocean"
             } /-->
@@ -66,7 +66,7 @@
         <!-- wp:column {"width":"33.33%","className":"card card--white"} -->
         <div class="wp-block-column card card--white" style="flex-basis:33.33%">
             <!-- wp:template-part {
-                "slug":"icons/fa-house-circle-exclamation",
+                "slug":"icons-house-circle-exclamation",
                 "tagName":"div",
                 "className":"card__icon icon--amber"
             } /-->
@@ -97,7 +97,7 @@
         <!-- wp:column {"width":"33.33%","className":"card card--white"} -->
         <div class="wp-block-column card card--white" style="flex-basis:33.33%">
             <!-- wp:template-part {
-                "slug":"icons/fa-gavel",
+                "slug":"icons-gavel",
                 "tagName":"div",
                 "className":"card__icon icon--blue"
             } /-->

@@ -1,6 +1,18 @@
 {
   "$schema": "https://schemas.wp.org/trunk/theme.json",
   "version": 3,
+  "templateParts": [
+    {
+      "name": "icons-arrow-right",
+      "title": "Font Awesome Arrow Right",
+      "area": "uncategorized"
+    },
+    {
+      "name": "icons-gavel",
+      "title": "Font Awesome Gavel",
+      "area": "uncategorized"
+    }
+  ],
   "settings": {
     "color": {
       "palette": [
