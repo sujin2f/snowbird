@@ -1,28 +1,23 @@
 @use "../mixins";
 
-// TODO variables
-
 .layout__header {
   background-color: var(--wp--preset--color--white);
   border-bottom: 1px solid var(--wp--preset--color--gray-200);
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--wp--preset--shadow--natural);
 }
 
 .header__container {
   @include mixins.container;
-  height: 80px;
-  display: flex;
-  align-items: center;
+  @include mixins.flex-center;
+  height: var(--wp--preset--spacing--80);
   justify-content: space-between;
 
   .wp-block-navigation__container {
-    display: flex;
-    gap: 32px;
-    font-size: 0.875rem;
-    font-weight: 500;
+    gap: var(--wp--preset--spacing--50);
+    font-weight: 800;
     color: var(--wp--preset--color--gray-700);
 
     .wp-block-navigation-item__content:hover {

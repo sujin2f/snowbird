@@ -1,18 +1,6 @@
 {
   "$schema": "https://schemas.wp.org/trunk/theme.json",
   "version": 3,
-  "templateParts": [
-    {
-      "name": "icons-arrow-right",
-      "title": "Font Awesome Arrow Right",
-      "area": "uncategorized"
-    },
-    {
-      "name": "icons-gavel",
-      "title": "Font Awesome Gavel",
-      "area": "uncategorized"
-    }
-  ],
   "settings": {
     "color": {
       "palette": [
@@ -45,6 +33,31 @@
           "name": "Ocean",
           "slug": "ocean",
           "color": "#00838F"
+        },
+        {
+          "name": "Ocean (Bright)",
+          "slug": "ocean-bright",
+          "color": "#e6f7f8"
+        },
+        {
+          "name": "Amber",
+          "slug": "amber",
+          "color": "#d97706"
+        },
+        {
+          "name": "Amber (Bright)",
+          "slug": "amber-bright",
+          "color": "#fff7ed"
+        },
+        {
+          "name": "Blue",
+          "slug": "blue",
+          "color": "#2563eb"
+        },
+        {
+          "name": "Blue (Bright)",
+          "slug": "blue-bright",
+          "color": "#eff6ff"
         },
         {
           "name": "Sky",
@@ -90,6 +103,20 @@
           "name": "Secondary Dark",
           "slug": "secondary-dark",
           "color": "#FF8F00"
+        }
+      ]
+    },
+    "typography": {
+      "fontSizes": [
+        {
+          "name": "Medium",
+          "slug": "medium",
+          "size": "1rem"
+        },
+        {
+          "name": "Medium Large",
+          "slug": "m-large",
+          "size": "1.8rem"
         }
       ]
     },

@@ -1,6 +1,7 @@
 @use "blocks/button";
 @use "blocks/badge";
 @use "blocks/card";
+@use "blocks/icon";
 
 @use "patterns/hero";
 @use "patterns/about";
@@ -19,6 +20,7 @@ body {
   background-color: var(--wp--preset--color--gray-50);
   color: var(--wp--preset--color--gray-800);
   line-height: 1.6;
+  font-size: 1rem;
 }
 
 * {

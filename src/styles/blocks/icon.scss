@@ -1,0 +1,24 @@
+@use "../mixins";
+
+.icon--box {
+  @include mixins.flex-center;
+
+  width: var(--wp--preset--spacing--70);
+  aspect-ratio: var(--wp--preset--aspect-ratio--square);
+  border-radius: var(--wp--preset--spacing--30);
+}
+
+.icon--ocean {
+  background-color: var(--wp--preset--color--ocean-bright);
+  color: var(--wp--preset--color--ocean);
+}
+
+.icon--amber {
+  background-color: var(--wp--preset--color--amber-bright);
+  color: var(--wp--preset--color--amber);
+}
+
+.icon--blue {
+  background-color: var(--wp--preset--color--blue-bright);
+  color: var(--wp--preset--color--blue);
+}

@@ -3,10 +3,9 @@
   padding: 6px 14px;
   background-color: var(--wp--preset--color--primary);
   color: var(--wp--preset--color--white);
-  border-radius: 50px;
-  font-size: 0.75rem;
+  border-radius: var(--wp--preset--spacing--70);
+  font-size: var(--wp--preset--font-size--small);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  margin: 0;
 }
