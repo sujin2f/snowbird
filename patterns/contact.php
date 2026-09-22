@@ -9,7 +9,7 @@
 <!-- wp:group {"className":"contact__wrapper",,"id":"section__contact"} -->
 <div class="wp-block-group contact__wrapper" id="section__contact">
     <!-- wp:columns {
-        "isStackedOnMobile":false,
+        "isStackedOnMobile":true,
         "className":"contact__container"
     } -->
     <div class="wp-block-columns contact__container">

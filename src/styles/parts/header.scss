@@ -30,4 +30,19 @@
       color: var(--wp--preset--color--ocean);
     }
   }
+
+  .wp-block-navigation__responsive-container.is-menu-open
+    .wp-block-navigation__container {
+    width: 100%;
+
+    .wp-block-navigation-item {
+      width: 100%;
+
+      .wp-block-navigation-item__content {
+        width: 100%;
+        padding: var(--wp--preset--spacing--20);
+        font-size: var(--wp--preset--font-size--medium);
+      }
+    }
+  }
 }

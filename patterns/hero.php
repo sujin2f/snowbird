@@ -7,10 +7,18 @@
 ?>
 
 <!-- wp:cover {
+	"url":"<?php echo get_template_directory_uri(); ?>/src/images/hero.default.jpeg",
 	"dimRatio":40,
 	"className":"hero__wrapper"
 } -->
 <div class="wp-block-cover hero__wrapper">
+	<img
+		class="wp-block-cover__image-background"
+		alt=""
+		src="<?php echo get_template_directory_uri(); ?>/src/images/hero.default.jpeg"
+		data-object-fit="cover"
+	/>
+
 	<span aria-hidden="true" class="wp-block-cover__background has-background-dim-40 has-background-dim"></span>
 
 	<div class="wp-block-cover__inner-container">
@@ -36,7 +44,11 @@
 				target="_blank"
 				rel="noopener"
 			>
-				Find Your Local Agent 
+				Find Your Local Agent
+				<!-- wp:template-part {
+					"slug":"icons/fa-arrow-right",
+					"tagName":"span"
+				} /-->
 			</a>
 		</div>
   		<!-- /wp:button -->

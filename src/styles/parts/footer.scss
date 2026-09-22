@@ -12,8 +12,9 @@
 .footer__container {
   @include mixins.container;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
+  text-align: center;
 
   p {
     margin: 0;
@@ -29,5 +30,18 @@
 .footer__copyright {
   font-size: 0.75rem;
   color: var(--wp--preset--color--gray-500);
-  text-align: right;
+  text-align: center;
+  margin-top: var(--wp--preset--spacing--40);
+}
+
+@media (min-width: 781px) {
+  .footer__container {
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .footer__copyright {
+    text-align: right;
+    margin-top: 0;
+  }
 }

@@ -6,8 +6,12 @@
  */
 ?>
 
-<!-- wp:group {"className":"services__wrapper","id":"section__services"} -->
-<div class="wp-block-group services__wrapper" id="section__services">
+<!-- wp:group {
+    "tagName":"section",
+    "className":"services__wrapper",
+    "id":"section__services"
+} -->
+<section class="wp-block-group services__wrapper" id="section__services">
     <!-- wp:group {
         "tagName":"header",
         "className":"services__header"
@@ -24,12 +28,18 @@
     <!-- /wp:group -->
 
     <!-- wp:columns {
-        "isStackedOnMobile":false,
+        "isStackedOnMobile":true,
         "className":"services__container"
     } -->
     <div class="wp-block-columns services__container">
         <!-- wp:column {"width":"33.33%","className":"card card--white"} -->
         <div class="wp-block-column card card--white" style="flex-basis:33.33%">
+            <!-- wp:template-part {
+                "slug":"icons/fa-user-check",
+                "tagName":"div",
+                "className":"card__icon icon--ocean"
+            } /-->
+
             <!-- wp:heading {"level":3} -->
             <h3>Need a Local Agent?</h3>
             <!-- /wp:heading -->
@@ -55,6 +65,12 @@
 
         <!-- wp:column {"width":"33.33%","className":"card card--white"} -->
         <div class="wp-block-column card card--white" style="flex-basis:33.33%">
+            <!-- wp:template-part {
+                "slug":"icons/fa-house-circle-exclamation",
+                "tagName":"div",
+                "className":"card__icon icon--amber"
+            } /-->
+
             <!-- wp:heading {"level":3} -->
             <h3>Foreclosure Properties</h3>
             <!-- /wp:heading -->
@@ -80,6 +96,12 @@
 
         <!-- wp:column {"width":"33.33%","className":"card card--white"} -->
         <div class="wp-block-column card card--white" style="flex-basis:33.33%">
+            <!-- wp:template-part {
+                "slug":"icons/fa-gavel",
+                "tagName":"div",
+                "className":"card__icon icon--blue"
+            } /-->
+
             <!-- wp:heading {"level":3} -->
             <h3>Tax Lien Auctions</h3>
             <!-- /wp:heading -->
@@ -106,5 +128,5 @@
         <!-- /wp:column -->
     </div>
     <!-- /wp:columns -->
-</div>
+</section>
 <!-- /wp:group -->

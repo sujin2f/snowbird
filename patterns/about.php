@@ -9,7 +9,7 @@
 <!-- wp:group {"className":"about__wrapper","id":"section__about"} -->
 <div class="wp-block-group about__wrapper" id="section__about">
     <!-- wp:columns {
-        "isStackedOnMobile":false,
+        "isStackedOnMobile":true,
         "className":"about__container"
     } -->
     <div class="wp-block-columns about__container">
@@ -23,7 +23,7 @@
                 "linkDestination":"none"
             } -->
             <figure class="wp-block-image size-large card--profile__image">
-                <img src="https://example.com" alt="Example image description" />
+                <img src="<?php echo get_template_directory_uri(); ?>/src/images/profile.default.jpeg" alt="Example image description" />
             </figure>
             <!-- /wp:image -->
 

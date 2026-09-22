@@ -4,6 +4,10 @@
   min-height: 0;
   padding: 96px 0;
 
+  .wp-block-cover__background {
+    background-color: var(--wp--preset--color--navy) !important;
+  }
+
   .wp-block-cover__inner-container {
     @include mixins.container;
     box-sizing: border-box;
@@ -27,5 +31,10 @@
     color: var(--wp--preset--color--gray-200);
     margin: 0 0 32px;
     max-width: 750px;
+  }
+
+  .wp-block-button__link .wp-font-awesome-icon {
+    margin-left: var(--wp--preset--spacing--20);
+    font-weight: 900;
   }
 }
