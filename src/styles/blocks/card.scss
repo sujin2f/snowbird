@@ -16,4 +16,9 @@
   &.card--white {
     background-color: var(--wp--preset--color--white);
   }
+
+  &.card--transparent {
+    background-color: transparent;
+    border-color: transparent;
+  }
 }

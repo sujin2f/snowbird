@@ -50,3 +50,22 @@
     }
   }
 }
+
+input[type="submit"] {
+  padding: var(--wp--preset--spacing--30) var(--wp--preset--spacing--40);
+  font-size: var(--wp--preset--font-size--medium);
+  background-color: var(--wp--preset--color--primary);
+  border: 1px solid var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  border-radius: var(--wp--preset--spacing--20);
+  transition: var(--wp--custom--transition);
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--wp--preset--color--primary-light);
+  }
+}

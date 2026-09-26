@@ -1,11 +1,31 @@
 @use "../mixins";
 
-.contact__wrapper {
-  padding: var(--wp--preset--spacing--80) 0;
-  background-color: var(--wp--preset--color--white);
-}
+.contact {
+  &__wrapper {
+    padding: var(--wp--preset--spacing--80) 0;
+    background-color: var(--wp--preset--color--white);
+  }
 
-.contact__container {
-  @include mixins.container;
-  gap: var(--wp--preset--spacing--50);
+  &__container {
+    @include mixins.container;
+    gap: var(--wp--preset--spacing--50);
+
+    h2 {
+      margin-bottom: var(--wp--preset--spacing--30);
+    }
+
+    li {
+      list-style: none;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      align-items: center;
+      gap: var(--wp--preset--spacing--20);
+      margin-bottom: var(--wp--preset--spacing--30);
+
+      .icon--box {
+        width: var(--wp--preset--spacing--60);
+      }
+    }
+  }
 }
