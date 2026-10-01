@@ -40,4 +40,9 @@
       }
     }
   }
+
+  .wp-block-site-logo.is-default-size img {
+    height: calc(var(--wp--preset--spacing--80) - 25px);
+    width: auto;
+  }
 }

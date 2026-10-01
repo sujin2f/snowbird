@@ -54,6 +54,7 @@ textarea {
   padding: var(--wp--preset--spacing--20);
   border-radius: var(--wp--preset--spacing--20);
   transition: var(--wp--custom--transition);
+  width: 100%;
 
   &:focus {
     border-color: var(--wp--preset--color--primary);
