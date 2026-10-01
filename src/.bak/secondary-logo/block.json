@@ -1,0 +1,37 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "dennis-alexander/secondary-logo",
+  "version": "0.1.0",
+  "title": "Secondary Logo",
+  "category": "theme",
+  "description": "Put the second logo",
+  "example": {},
+  "keywords": [],
+  "attributes": {
+    "fallbackCurrentYear": {
+      "type": "string"
+    },
+    "showStartingYear": {
+      "type": "boolean"
+    },
+    "startingYear": {
+      "type": "string"
+    }
+  },
+  "supports": {
+    "color": {
+      "background": false,
+      "text": true
+    },
+    "html": false,
+    "typography": {
+      "fontSize": true
+    }
+  },
+  "textdomain": "dennis-alexander/secondary-logo",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

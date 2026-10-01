@@ -1,0 +1,134 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "name": "White",
+          "slug": "white",
+          "color": "#ffffff"
+        },
+        {
+          "name": "Primary",
+          "slug": "primary",
+          "color": "#00838F"
+        },
+        {
+          "name": "Primary Light",
+          "slug": "primary-light",
+          "color": "#00ACC1"
+        },
+        {
+          "name": "Navy",
+          "slug": "navy",
+          "color": "#0A2540"
+        },
+        {
+          "name": "Sand",
+          "slug": "sand",
+          "color": "#F4F1EA"
+        },
+        {
+          "name": "Ocean",
+          "slug": "ocean",
+          "color": "#00838F"
+        },
+        {
+          "name": "Ocean (Bright)",
+          "slug": "ocean-bright",
+          "color": "#e6f7f8"
+        },
+        {
+          "name": "Amber",
+          "slug": "amber",
+          "color": "#d97706"
+        },
+        {
+          "name": "Amber (Bright)",
+          "slug": "amber-bright",
+          "color": "#fff7ed"
+        },
+        {
+          "name": "Blue",
+          "slug": "blue",
+          "color": "#2563eb"
+        },
+        {
+          "name": "Blue (Bright)",
+          "slug": "blue-bright",
+          "color": "#eff6ff"
+        },
+        {
+          "name": "Sky",
+          "slug": "sky",
+          "color": "#00ACC1"
+        },
+        {
+          "name": "Gray 50",
+          "slug": "gray-50",
+          "color": "#f9fafb"
+        },
+        {
+          "name": "Gray 200",
+          "slug": "gray-200",
+          "color": "#e5e7eb"
+        },
+        {
+          "name": "Gray 300",
+          "slug": "gray-300",
+          "color": "#c0c5cd"
+        },
+        {
+          "name": "Gray 400",
+          "slug": "gray-400",
+          "color": "#9ca3af"
+        },
+        {
+          "name": "Gray 500",
+          "slug": "gray-500",
+          "color": "#6b7280"
+        },
+        {
+          "name": "Gray 600",
+          "slug": "gray-600",
+          "color": "#4b5563"
+        },
+        {
+          "name": "Gray 700",
+          "slug": "gray-700",
+          "color": "#374151"
+        },
+        {
+          "name": "Gray 800",
+          "slug": "gray-800",
+          "color": "#1f2937"
+        },
+        {
+          "name": "Secondary Dark",
+          "slug": "secondary-dark",
+          "color": "#FF8F00"
+        }
+      ]
+    },
+    "typography": {
+      "fontSizes": [
+        {
+          "name": "Medium",
+          "slug": "medium",
+          "size": "1rem"
+        },
+        {
+          "name": "Medium Large",
+          "slug": "m-large",
+          "size": "1.8rem"
+        }
+      ]
+    },
+    "custom": {
+      "transition": "all 0.3s ease",
+      "font-family": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+      "line-height": "1.6"
+    }
+  }
+}

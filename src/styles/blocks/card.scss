@@ -1,0 +1,24 @@
+.card {
+  padding: var(--wp--preset--spacing--60);
+  border-radius: var(--wp--preset--spacing--30);
+  border: 1px solid var(--wp--preset--color--gray-200);
+  display: grid;
+
+  &.card--sand {
+    background-color: var(--wp--preset--color--sand);
+  }
+
+  &.card--navy {
+    background-color: var(--wp--preset--color--navy);
+    color: var(--wp--preset--color--white);
+  }
+
+  &.card--white {
+    background-color: var(--wp--preset--color--white);
+  }
+
+  &.card--transparent {
+    background-color: transparent;
+    border-color: transparent;
+  }
+}

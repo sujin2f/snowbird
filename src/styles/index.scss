@@ -1,0 +1,85 @@
+@use "blocks/button";
+@use "blocks/badge";
+@use "blocks/card";
+@use "blocks/icon";
+
+@use "patterns/hero";
+@use "patterns/about";
+@use "patterns/services";
+@use "patterns/contact";
+
+@use "parts/header";
+@use "parts/footer";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--wp--custom--font-family);
+  background-color: var(--wp--preset--color--gray-50);
+  color: var(--wp--preset--color--gray-800);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+h2 {
+  font-size: var(--wp--preset--font-size--m-large);
+  color: var(--wp--preset--color--navy);
+}
+
+label {
+  font-weight: bold;
+  font-size: var(--wp--preset--font-size--medium);
+  display: block;
+  line-height: 1.4;
+  color: var(--wp--preset--color--navy);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  box-shadow: none;
+  outline: none;
+  appearance: none;
+  border: 1px solid var(--wp--preset--color--gray-300);
+  font-size: var(--wp--preset--font-size--medium);
+  padding: var(--wp--preset--spacing--20);
+  border-radius: var(--wp--preset--spacing--20);
+  transition: var(--wp--custom--transition);
+  width: 100%;
+
+  &:focus {
+    border-color: var(--wp--preset--color--primary);
+  }
+}
+
+.wpcf7-form-control-wrap {
+  display: block;
+  margin-bottom: var(--wp--preset--spacing--40);
+}
+
+.wp-block-column {
+  align-content: baseline;
+}
+
+.hide-on-mobile {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .hide-on-mobile {
+    display: block;
+  }
+
+  .show-on-mobile {
+    display: none !important;
+  }
+}

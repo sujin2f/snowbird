@@ -1,0 +1,61 @@
+@use "../mixins";
+
+// TODO variables
+
+.services__wrapper {
+  padding: var(--wp--preset--spacing--80) 0;
+  background-color: var(--wp--preset--color--gray-50);
+  border-top: 1px solid var(--wp--preset--color--gray-200);
+}
+
+.services__container {
+  @include mixins.container;
+  gap: var(--wp--preset--spacing--50);
+
+  .wp-block-column {
+    grid-template-rows: min-content min-content min-content 1fr;
+  }
+
+  .card__icon {
+    margin-bottom: 24px;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    color: var(--wp--preset--color--navy);
+    margin-bottom: 12px;
+  }
+
+  p {
+    color: var(--wp--preset--color--gray-600);
+    font-size: 0.875rem;
+    margin-bottom: 24px;
+  }
+
+  .wp-block-button {
+    align-self: end;
+  }
+
+  .wp-block-button__link {
+    width: 100%;
+    padding: 12px;
+    font-size: 0.875rem;
+    height: auto;
+  }
+}
+
+.services__header {
+  @include mixins.container;
+  max-width: 830px;
+  margin-bottom: var(--wp--preset--spacing--70);
+
+  h2 {
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  p {
+    color: var(--wp--preset--color--gray-600);
+    text-align: center;
+  }
+}
