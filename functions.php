@@ -20,10 +20,11 @@ add_action( 'after_setup_theme', function() {
 /**
  * Blocks
  * - secondary logo
- */
+ *
 add_action('init', function() {
     register_block_type( __DIR__ . '/build/secondary-logo' );
 });
+ */
 
 /**
  * Enqueue Style for Block
@@ -43,7 +44,7 @@ add_action( 'enqueue_block_assets', function() {
 
 /**
  * Register Site-meta for Secondary Logo
- */
+ *
 add_action( 'init', function() {
     register_setting(
         'general',
@@ -55,4 +56,5 @@ add_action( 'init', function() {
         )
     );
 });
+ */
 
