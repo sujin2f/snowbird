@@ -7,7 +7,7 @@
 ?>
 
 <!-- wp:cover {
-	"url":"<?php echo get_template_directory_uri(); ?>/src/images/hero.default.jpeg",
+	"url":"<?php echo get_template_directory_uri(); ?>/src/images/hero.default.webp",
 	"dimRatio":40,
 	"className":"hero__wrapper"
 } -->
@@ -15,7 +15,7 @@
 	<img
 		class="wp-block-cover__image-background"
 		alt=""
-		src="<?php echo get_template_directory_uri(); ?>/src/images/hero.default.jpeg"
+		src="<?php echo get_template_directory_uri(); ?>/src/images/hero.default.webp"
 		data-object-fit="cover"
 	/>
 

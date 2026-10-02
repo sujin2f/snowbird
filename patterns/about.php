@@ -23,7 +23,7 @@
                 "linkDestination":"none"
             } -->
             <figure class="wp-block-image size-large card--profile__image">
-                <img src="<?php echo get_template_directory_uri(); ?>/src/images/profile.default.jpeg" alt="Example image description" />
+                <img src="<?php echo get_template_directory_uri(); ?>/src/images/profile.default.webp" alt="Example image description" />
             </figure>
             <!-- /wp:image -->
 
