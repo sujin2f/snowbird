@@ -18,15 +18,6 @@ add_action( 'after_setup_theme', function() {
 });
 
 /**
- * Blocks
- * - secondary logo
- *
-add_action('init', function() {
-    register_block_type( __DIR__ . '/build/secondary-logo' );
-});
- */
-
-/**
  * Enqueue Style for Block
  */
 add_action( 'enqueue_block_assets', function() {
@@ -41,6 +32,20 @@ add_action( 'enqueue_block_assets', function() {
     );
 
 });
+
+/**
+ * Remove Font Awesome SVG Styles & Dashicons for non-logged-in users
+ */
+add_action("wp_enqueue_scripts", function () {
+	wp_dequeue_style("font-awesome-svg-styles");
+});
+
+add_action( 'wp_enqueue_scripts', function () {
+    if ( ! is_user_logged_in() ) {
+        wp_deregister_style( 'dashicons' );
+    }
+});
+
 
 /**
  * Register Site-meta for Secondary Logo
@@ -58,3 +63,11 @@ add_action( 'init', function() {
 });
  */
 
+/**
+ * Blocks
+ * - secondary logo
+ *
+add_action('init', function() {
+    register_block_type( __DIR__ . '/build/secondary-logo' );
+});
+ */
