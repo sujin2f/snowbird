@@ -36,15 +36,56 @@ add_action( 'enqueue_block_assets', function() {
 /**
  * Remove Font Awesome SVG Styles & Dashicons for non-logged-in users
  */
-add_action("wp_enqueue_scripts", function () {
-	wp_dequeue_style("font-awesome-svg-styles");
-});
-
 add_action( 'wp_enqueue_scripts', function () {
+	wp_dequeue_style( 'font-awesome-svg-styles' );
+	wp_deregister_style( 'font-awesome-svg-styles' );
+	wp_dequeue_style( 'font-awesome-official' );
+	wp_deregister_style( 'font-awesome-official' );
+	wp_dequeue_style( 'font-awesome-official-v4shim' );
+	wp_deregister_style( 'font-awesome-official-v4shim' );
+
     if ( ! is_user_logged_in() ) {
+    	wp_dequeue_style( 'dashicons' );
         wp_deregister_style( 'dashicons' );
     }
+}, 999 );
+
+/**
+ * Add Default Logo if no custom logo is set
+ */
+add_filter( 'get_custom_logo', function ( $html ) {
+    if ( $html ) {
+        return $html;
+    }
+    
+	$custom_logo_id = get_theme_mod( 'custom_logo' );
+	$html = sprintf( '<a href="%1$s" class="custom-logo-link" rel="home" itemprop="url"><img width="385" height="75" src="%2$s/src/images/logo.webp" class="custom-logo" alt="snowbird" decoding="async"></a>',
+            esc_url( home_url( '/' ) ),
+            get_stylesheet_directory_uri()
+        );
+	return $html;	
 });
+
+/**
+ * Preload Hero Image
+ */
+add_filter( 'render_block_core/cover', function ( $block_content, $block ) {
+    if ( ! $block['attrs']['url'] ) {
+        return $block_content;
+    }
+
+    // Preload the hero image in the head
+    add_action('wp_head', function () use ( $block ) {
+        echo '<link rel="preload" href="' . esc_url( $block['attrs']['url'] ) . '" as="image" fetchpriority="high">';
+    });
+
+    $modified_content = str_replace(
+        'class="wp-block-cover__image-background"',
+        'class="wp-block-cover__image-background" fetchpriority="high"',
+        $block_content
+    );
+    return $modified_content;
+}, 10, 2 );
 
 
 /**
