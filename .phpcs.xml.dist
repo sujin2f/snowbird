@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	name="Snowbird"
+	xsi:noNamespaceSchemaLocation="https://schema.phpcodesniffer.com/phpcs.xsd">
+
+	<description>PHP_CodeSniffer configuration for the Snowbird theme, based on the WordPress VIP coding standards.</description>
+
+	<!-- Scan all PHP files in the theme. -->
+	<file>.</file>
+
+	<arg name="extensions" value="php"/>
+	<arg name="colors"/>
+	<arg value="sp"/>
+	<arg name="basepath" value="."/>
+
+	<!-- Exclude generated and third-party code. -->
+	<exclude-pattern>*/vendor/*</exclude-pattern>
+	<exclude-pattern>*/node_modules/*</exclude-pattern>
+	<exclude-pattern>*/build/*</exclude-pattern>
+	<exclude-pattern>*/.bak/*</exclude-pattern>
+
+	<!--
+		WordPress VIP standard.
+		WordPress-VIP-Go is the ruleset enforced by the VIP Code Analysis Bot.
+	-->
+	<rule ref="WordPress-VIP-Go"/>
+
+	<!-- Recommended by VIP alongside WordPress-VIP-Go (not required, but useful). -->
+	<rule ref="WordPress-Extra"/>
+	<rule ref="WordPress-Docs"/>
+
+	<!-- PHP cross-version compatibility. Theme requires PHP 8.0+ (see style.css). -->
+	<config name="testVersion" value="8.0-"/>
+	<rule ref="PHPCompatibilityWP"/>
+
+	<!-- Verify that all globals/functions/classes are prefixed with the theme prefix. -->
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array">
+				<element value="snowbird"/>
+			</property>
+		</properties>
+	</rule>
+
+	<!-- Verify that the text domain matches the theme slug. -->
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array">
+				<element value="snowbird"/>
+				<element value="dennis-alexander/snowbird"/>
+			</property>
+		</properties>
+	</rule>
+
+</ruleset>
